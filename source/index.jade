@@ -1,0 +1,83 @@
+extends layout/layout
+include layout/mixins
+block htmlTitle
+  title S-XL Arquitectos | Home
+block content
+  input(type='hidden',class='dataNav',id='0')
+  .contGen.wrapper.center-block.noP
+    .container-fluid
+      .col-xs-12
+        #slider-principal.carousel.slide.center-block(data-ride='carousel')
+          .linev.lineleft1
+          .linev.lineleft2
+          .carousel-inner(role="listbox")
+            .item.active
+              img(src='images/slider1.jpg' alt='')
+              .carousel-caption
+                | Sed ut PACIFIC unde omnis iste natus error sit voluptatem non numquam eius. 1
+            .item
+              img(src='images/slider2.jpg' alt='')
+              .carousel-caption
+                | Sed ut PACIFIC unde omnis iste natus error sit voluptatem non numquam eius. 2
+            .item
+              img(src='images/slider3.jpg' alt='')
+              .carousel-caption
+                | Sed ut PACIFIC unde omnis iste natus error sit voluptatem non numquam eius. 3
+    .container-fluid
+      .col-xs-12
+        .slide-control
+          a#prev(href="#") <
+          a#next(href="#") >
+    .container-fluid
+      .col-xs-12
+        .slide-text
+    .container-fluid
+      .col-xs-12
+        .line
+    .container-fluid
+      .col-xs-12.col-sm-6.col-md-6
+        h3 PROYECTOS DESTACADOS.
+        p
+          | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+          | rem aperiam, eaque ipsa quae ab illo inventore veritatis et.
+    .container-fluid.sepTop1Estan
+      .col-md-6.col-sm-6.col-xs-12.text-center
+        .contImg
+          img(src='images/image1.jpg' class='img-responsive')
+          .pegatinaTitle: span NOMBRE PROYECTO
+          a(class='mask',href='sub_catagoria.html')
+            .contDataMask
+              .txtMask NOMBRE PROYECTO
+                | eu se magni dolores eos qui ratione voluptatem sequi nesciunt arem itsajum epton neu.
+              .btnViewProject
+      .col-md-6.col-sm-6.col-xs-12.text-center
+        .contImg
+          img(src='images/image2.jpg' class='img-responsive')
+          .pegatinaTitle: span NOMBRE PROYECTO
+          a(class='mask',href='sub_catagoria.html')
+            .contDataMask
+              .txtMask NOMBRE PROYECTO
+                | eu se magni dolores eos qui ratione voluptatem sequi nesciunt arem itsajum epton neu.
+              .btnViewProject
+    .container-fluid.sepTop1Estan
+      .col-md-6.col-sm-6.col-xs-12.text-center
+        .contImg
+          img(src='images/image3.jpg' class='img-responsive')
+          .pegatinaTitle: span EL CUADRO SE ADAPTA AL LARGO
+          a(class='mask',href='sub_catagoria.html')
+            .contDataMask
+              .txtMask EL CUADRO SE ADAPTA AL LARGO
+                | eu se magni dolores eos qui ratione voluptatem sequi nesciunt arem itsajum epton neu.
+              .btnViewProject
+      .col-md-6.col-sm-6.col-xs-12.text-center
+        .contImg
+          img(src='images/image4.jpg' class='img-responsive')
+          .pegatinaTitle: span NOMBRE PROYECTO
+          a(class='mask',href='sub_catagoria.html')
+            .contDataMask
+              .txtMask NOMBRE PROYECTO
+                | eu se magni dolores eos qui ratione voluptatem sequi nesciunt arem itsajum epton neu.
+              .btnViewProject
+
+  .container
+    .line.center-block

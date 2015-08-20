@@ -1,0 +1,121 @@
+@import "variables";
+@import "font";
+@import "header";
+@import "footer";
+@import "home";
+@import "about_us";
+
+*{
+  outline:none;
+}
+
+.wrapper-project3{
+  max-width:1200px;
+  .line{
+    background: #000000;
+    width: 100%;
+    height: 8px;
+  }
+  .wrapper-img{
+    padding:30px 0;
+    img{
+      width: 100%;
+    }
+  }
+  .wrapper-text{
+    width: 100%;
+    padding:30px 0;
+    h2{
+
+    }
+    p{
+
+    }
+  }
+}
+
+//contact
+
+.wrapper-contact{
+  max-width:1200px;
+
+  .line{
+    background: #000000;
+    width: 100%;
+    height: 8px;
+  }
+  .wrapper-img{
+    padding:30px 0;
+    img{
+      width: 100%;
+    }
+  }
+  .wrapper-map{
+    width: 100%;
+    height: 300px;
+    margin: 0 0 30px 0;
+  }
+  .wrapper-text, .wrapper-form{
+    h2{
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .wrapper-form{
+    .trform{
+      padding: 0 0 10px 0;
+    }
+    input[type=text].med{
+      width: 48%;
+      float: left;
+    }
+    input[type=text].mg{
+      margin-right: 4%;
+    }
+    input[type=submit]{
+      color:#fff;
+      background: #000;
+      padding: 10px 40px;
+      border:none;
+      float: right;
+      &:hover{
+        background: #3c3c3c;
+      }
+    }
+    input[type=text]{
+      width: 100%;
+      padding-left: 10px;
+      height: 34px;
+      &.error{
+        border: 1px solid red;
+      }
+    }
+    textarea{
+      width: 100%;
+      height: 68px;
+      padding: 0 0 0 10px;
+      border: 1px solid #d4d4d4;
+      resize: none;
+      &.error{
+        border: 1px solid red;
+      }
+    }
+    span.error{
+      color:red;
+      display: block;
+    }
+    #phone-error{
+      float: left;
+      width: 48%;
+      padding-bottom: 10px;
+    }
+    #mail-error{
+      float: right;
+      width: 48%;
+      padding-bottom: 10px;
+    }
+
+  }
+
+
+}

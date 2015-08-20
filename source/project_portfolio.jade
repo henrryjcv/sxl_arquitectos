@@ -1,0 +1,62 @@
+extends layout/layout
+include layout/mixins
+
+block htmlTitle
+  title S-XL Arquitectos | Portafolio
+
+block content
+  input(type='hidden',class='dataNav',id='2')
+  .contGen.container.border
+    h3.sepTop4 PORTAFOLIO DE PROYECTOS.
+    p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.
+    .row.sepTop2
+      .col-md-4.col-sm-4.col-xs-12.text-center
+        .contImg
+          img(src='images/img-col-4-1.jpg' class='img-responsive hidden-xs')
+          img(src='images/img-col-4-1_thumbs.jpg' class='img-responsive visible-xs')
+          .pegatinaTitle: span OFICINAS
+          a(class='mask' href='sub_catagoria.html')
+            .contDataMask
+              .txtMask OFICINAS
+                |eu se magni dolores eos qui ratione voluptatem sequi nesciunt arem itsajum epton neu.
+              .btnViewProject
+      .col-md-4.col-sm-4.col-xs-12.text-center
+        .contImg
+          img(src='images/img-col-4-2.jpg' class='img-responsive hidden-xs')
+          img(src='images/img-col-4-2_thumbs.jpg' class='img-responsive visible-xs')
+          .pegatinaTitle: span RETAIL
+          a(class='mask' href='sub_catagoria.html')
+            .contDataMask
+              .txtMask LOCALES COMERCIALES O RETAIL
+                | eu se magni dolores eos qui ratione voluptatem sequi nesciunt arem itsajum epton neu.
+              .btnViewProject
+      .col-md-4.col-sm-4.col-xs-12.text-center
+        .contImg
+          img(src='images/img-col-4-3.jpg' class='img-responsive hidden-xs')
+          img(src='images/img-col-4-3_thumbs.jpg' class='img-responsive visible-xs')
+          .pegatinaTitle: span VIVIENDAS
+          a(class='mask' href='sub_catagoria.html')
+            .contDataMask
+              .txtMask VIVIENDAS
+                | eu se magni dolores eos qui ratione voluptatem sequi nesciunt arem itsajum epton neu.
+              .btnViewProject
+    .row.sepTop1Estan
+      .col-md-6.col-sm-6.col-xs-12.text-center
+        .contImg
+          img(src='images/img-col-6-1.jpg' class='img-responsive')
+          .pegatinaTitle: span COMERCIAL
+          a(class='mask' href='sub_catagoria.html')
+            .contDataMask
+              .txtMask COMERCIAL
+                | eu se magni dolores eos qui ratione voluptatem sequi nesciunt arem itsajum epton neu.
+              .btnViewProject
+      .col-md-6.col-sm-6.col-xs-12.text-center
+        .contImg
+          img(src='images/img-col-6-2.jpg' class='img-responsive')
+          .pegatinaTitle: span DISEÑO DE MOBILIARIO
+          a(class='mask' href='sub_catagoria.html')
+            .contDataMask
+              .txtMask DISEÑO DE MOBILIARIO
+                | eu se magni dolores eos qui ratione voluptatem sequi nesciunt arem itsajum epton neu.
+              .btnViewProject
+

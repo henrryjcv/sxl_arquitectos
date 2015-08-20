@@ -1,0 +1,50 @@
+extends layout/layout
+include layout/mixins
+block htmlTitle
+  title S-XL Arquitectos | Contacto
+block importtop
+  script(src='https://maps.googleapis.com/maps/api/js?v=3.exp')
+block importbottom
+  script(src='js/vendor/jquery.validate.js')
+  script(src='js/vendor/jquery.filter_input.js')
+block content
+  input(type='hidden',class='dataNav',id='6')
+  .contGen.wrapper-contact.center-block
+    .container-fluid
+      .col-md-12.center-block
+        .line.center-block
+    .container-fluid
+      .col-md-12.center-block
+        .wrapper-img.center-block
+          img(src="images/contacto.jpg", alt="")
+    .container-fluid
+      .col-xs-12.col-sm-12.col-md-3
+        .wrapper-text
+          h2 UBÍCANOS
+          p  / dir. Sed ut perspiciatis unde omnis iste
+          p  Natus error sit.
+          p  / telf. 767 6231 - 712 5761
+          p  / e-mail. consequuntur@sxl.com
+      .col-xs-12.col-sm-12.col-md-4
+        .wrapper-form
+          h2 CONTÁCTANOS
+          form#frmData(name="frmData" method="POST")
+            .trform
+              input#sname(type="text" name="sname" placeholder="Escribe tu nombre")
+              .message-error
+            .trform
+              input#phone.med.mg(type="text" name="phone" placeholder="Escribe tus teléfonos")
+              input#mail.med(type="text" name="mail" placeholder="Escribe tu e-mail")
+              .clearfix
+              .message-error
+            .trform
+              textarea#message(name="message" placeholder="Mensaje")
+              .message-error
+            .trform
+              input(type="submit" value="Enviar")
+              .clearfix
+      .col-xs-12.col-sm-12.col-md-5
+        #map.wrapper-map
+
+  .container
+    .line.center-block

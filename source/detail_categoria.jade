@@ -1,0 +1,71 @@
+extends layout/layout
+include layout/mixins
+block htmlTitle
+  title S-XL Arquitectos | Portafolio
+block importtop
+  link(rel="stylesheet", href="css/vendor/jquery.fancybox.css")
+block importbottom
+  script(src='js/vendor/jquery.fancybox.js')
+block content
+  input(type='hidden',class='dataNav',id='2')
+  .contGen.container.border
+    .row.sepTopBlog
+      .col-md-4.col-sm-4.col-xs-12
+        a(class='btnAtras',href='sub_catagoria.html'): img(src='images/btnAtras.png' class='img-responsive')
+        .row
+          .col-md-12.borBot
+            h3.sepTopdetail.detail GREEN STATION
+            p.detail Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis etum.
+      .col-md-8.col-sm-8.col-xs-12
+        .contImg
+          img(src='images/project3-1.jpg' class='img-responsive')
+    h3.sepTop6.detail GALERIA
+    .row.sepTop1Estan
+      .col-md-4.col-sm-4.col-xs-12
+        .contImg.text-center
+          img(src='images/project3-11.jpg' class='img-responsive')
+          a(class='lightbox mask' href="images/ligtbox-img.jpg" rel="galeria")
+            .contDataMaskLupa
+              img(src='images/icoLupa.png')
+      .col-md-4.col-sm-4.col-xs-12
+        .contImg.text-center
+          img(src='images/project3-12.jpg' class='img-responsive')
+          a(class='lightbox mask' href="images/ligtbox-img.jpg" rel="galeria")
+            .contDataMaskLupa
+              img(src='images/icoLupa.png')
+      .col-md-4.col-sm-4.col-xs-12
+        .contImg.text-center
+          img(src='images/project3-13.jpg' class='img-responsive')
+          a(class='lightbox mask' href="images/ligtbox-img.jpg" rel="galeria")
+            .contDataMaskLupa
+              img(src='images/icoLupa.png')
+    .row.sepTop1Estan
+      .col-md-6.col-sm-6.col-xs-12
+        .row
+          .col-md-6.col-sm-6.col-xs-12
+            .contImg.text-center
+              img(src='images/project3-21.jpg' class='img-responsive')
+              a(class='lightbox mask' href="images/ligtbox-img.jpg" rel="galeria")
+                .contDataMaskLupa
+                  img(src='images/icoLupa.png')
+          .col-md-6.col-sm-6.col-xs-12
+            .txtDetail "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam"
+        .row
+          .col-md-6.col-sm-6.col-xs-12.sepTop1
+            .contImg.text-center
+              img(src='images/project3-22.jpg' class='img-responsive')
+              a(class='lightbox mask' href="images/ligtbox-img.jpg" rel="galeria")
+                .contDataMaskLupa
+                  img(src='images/icoLupa.png')
+          .col-md-6.col-sm-6.col-xs-12.sepTop1
+            .contImg.text-center
+              img(src='images/project3-23.jpg' class='img-responsive')
+              a(class='lightbox mask' href="images/ligtbox-img.jpg" rel="galeria")
+                .contDataMaskLupa
+                  img(src='images/icoLupa.png' rel="")
+      .col-md-6.col-sm-6.col-xs-12
+        .contImg.text-center
+          img(src='images/project3-31.jpg' class='img-responsive')
+          a(class='lightbox mask' href="images/ligtbox-img.jpg" rel="galeria")
+            .contDataMaskLupa
+              img(src='images/icoLupa.png' rel="")

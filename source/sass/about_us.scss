@@ -1,0 +1,520 @@
+.line{
+  background: #000000;
+  width: 100%;
+  height: 8px;
+}
+.maskMenu{
+  height: 120%;
+  position: absolute;
+  opacity: .5;
+  top: -20%;
+  left: 0;
+  display: inline-block;
+  z-index: 9999;
+  background: #000;
+}
+.noP{
+  padding: 0 !important;
+}
+.contGen{
+  padding: 0 0 20px;
+  overflow: hidden;
+  padding-bottom: 52px !important;
+  &.border{
+    border-top: 8px solid #000;
+    border-bottom: 8px solid #000;
+  }
+  &.borderBlo{
+    border-bottom: 8px solid #000;
+  }
+  &.marBoot{
+    margin-bottom: 34px;
+  }
+  a{
+    display: block;
+    cursor: pointer;
+  }
+  h2{
+    color: #000;
+    font-size: 45px;
+  }
+  h3{
+    color: #000;
+    font-size: 25px;
+    &.detail{
+      font-size: 30px;
+    }
+  }
+  p{
+    color: #666;
+    font-size: 17px;
+    &.blog{
+      font-size: 25px;
+    }
+    &.detail{
+      min-height: 136px;
+      font-size: 20px;
+    }
+    &.borBoot{
+      border-bottom: 1px solid #aeaeae;
+      padding-bottom: 48px;
+    }
+  }
+  .sepTop1{
+    margin-top: 16px;
+  }
+  .sepTop1Estan{
+    margin-top: 16px;
+  }
+  .sepTopBlog{
+    margin-top: 44px;
+  }
+  .sepTop2{
+    margin-top: 25px;
+  }
+  .sepTop3{
+    margin-top: 32px;
+  }
+  .sepTop4{
+    margin-top: 42px;
+  }
+  .sepTop5{
+    margin-top: 54px;
+  }
+  .sepTop6{
+    margin-top: 68px;
+  }
+  .sepTopdetail{
+    margin-top: 118px;
+  }
+  .borBot{
+    border-bottom: 1px solid #cfcfcf;
+  }
+  .sepTop8{
+    margin-top: 80px;
+  }
+  .contImg{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    .mask{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 200px;
+      left: 0;
+      background: rgba(0,0,0,0.7);
+      transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      opacity: 0;
+      .contDataMask{
+        width: 100%;
+        padding: 55px 60px;
+        .txtMask{
+          color: #fff;
+          font-size: 20px;
+          text-align: left;
+        }
+        .btnViewProject{
+          background: url(../images/btnVerProyecto.png) no-repeat;
+          width: 130px;
+          height: 52px;
+          margin-top: 18px;
+        }
+      }
+      .contDataMaskLupa{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        margin-top: -12px;
+        cursor: pointer;
+      }
+    }
+    &:hover{
+      .mask{
+        top: 0;
+        opacity: 1;
+      }
+      .pegatinaTitle, .pegatinaLupa{
+        display: none;
+      }
+    }
+  }
+  .pegatinaTitle{
+    padding: 10px 20px;
+    background: #000;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    span{
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  .pegatinaLupa{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .btnRaedMore{
+    background: #000;
+    padding: 14px 110px;
+    display: inline-block;
+    span{
+      color: #fff;
+      font-size: 16px;
+    }
+    &:hover{
+      background: #3c3c3c;
+    }
+  }
+  #txtSearch{
+    width: calc(100% - 51px);
+    float: left;
+    border-radius: 0;
+    height: 51px;
+    font-family: $font-family;
+    font-size: 25px;
+    font-style: italic;
+
+  }
+  .noPaddingBlog{
+    padding: 0;
+  }
+  .pagination{
+    &>li{
+      &.active{
+        &>a{
+          font-size: 16px;
+          background: #000;
+          padding: 12px 18px;
+          color: #fff;
+          border-color: #000;
+        }
+      }
+      &>a{
+        font-size: 16px;
+        background: #e8e8e8;
+        padding: 12px 18px;
+        color: #000;
+      }
+    }
+  }
+  .btnAtras{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 9;
+  }
+  .txtDetail{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    color: #666;
+    font-size: 20px;
+  }
+}
+
+.logoBlanco{
+  display: none;
+}
+
+.headBlog{
+  background: #000;
+  border-color: #000;
+  nav{
+    background: #000;
+    border-color: #000;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    .btn-navbar{
+      background: url(../images/btnmenuBlanco.png) no-repeat center;
+    }
+  }
+  .logoBlanco{
+    display: block;
+  }
+  .logoNegro{
+    display: none;
+  }
+  .line {
+    background: #fff;
+  }
+  .social-text{
+    color: #fff;
+  }
+  .social{
+    .fb{
+       &:hover{
+         background: url("../images/facebook.png") no-repeat center;
+       }
+    }
+    .pint{
+      &:hover{
+        background: url("../images/pinterest.png") no-repeat center;
+      }
+    }
+    .inst{
+      &:hover{
+        background: url("../images/instagram.png") no-repeat center;
+      }
+    }
+  }
+  ul{
+    li{
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+
+.ui-widget-content{
+  background: #fff;
+  font-family: $font-family;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.ui-menu .ui-menu-item{
+  border: 0;
+  &:hover{
+    background: #ededed;
+    border: 0;
+    color: #000;
+    font-weight: normal;
+    padding: 3px 1em 3px .4em;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+
+  .contGen{
+    .sepTop1{
+      margin-top: 2px;
+    }
+
+    .sepTop6{
+      margin-top: 0;
+    }
+    .sepTop8{
+      margin-top: 4px;
+    }
+  }
+
+  .contGen .pegatinaTitle{
+    top: 20px;
+    left: 20px;
+  }
+
+  .contGen .sepTopdetail {
+    margin-top: 64px;
+  }
+}
+@media only screen and (max-width: 992px){
+
+  .contGen{
+    .sepTop1{
+      margin-top: 16px;
+    }
+    .sepTop6{
+      margin-top: 16px;
+    }
+  }
+  .contGen .contImg .mask .contDataMask{
+    padding: 20px 30px;
+  }
+  .contGen .sepTopBlog{
+    margin-top: 20px;
+  }
+
+  .contGen h3.detail {
+    font-size: 20px;
+  }
+  .contGen p.detail{
+    min-height: 90px;
+    font-size: 15px;
+  }
+
+  .contGen .txtDetail{
+    padding: 6px;
+    font-size: 18px;
+  }
+
+  .contGen .contImg{
+    display: block;
+    img{
+      width: 100%;
+    }
+  }
+
+  .contGen .sepTop5{
+    margin-top: 36px;
+  }
+  .contGen .sepTop3 {
+    margin-top: 20px;
+  }
+  .contGen p.borBoot{
+    padding-bottom: 38px;
+  }
+  .contGen .sepTop4 {
+    margin-top: 30px;
+  }
+  .contGen .sepTop2 {
+    margin-top: 20px;
+  }
+
+  .contGen.marBoot {
+    margin-bottom: 24px;
+  }
+
+  .contGen .contImg .mask{
+    top: 323px;
+  }
+}
+@media only screen and (max-width: 768px){
+
+  .fancybox-outer{
+    .fancybox-nav{
+      width: 36%;
+    }
+  }
+
+  .contGen{
+    padding: 0 20px 20px;
+    .noPadding{
+      padding: 0;
+    }
+  }
+  .contGen .contImg .mask .contDataMask{
+    padding: 16px 24px;
+  }
+
+  .contGen .pegatinaTitle{
+    top: 14px;
+    left: 14px;
+  }
+
+  .contGen .sepTop1Estan{
+    margin-top: 0;
+  }
+
+  .contGen .contImg{
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .contGen .contImg .img-responsive{
+    width: 100%;
+  }
+
+  .contGen .borTop{
+    border-top: 1px solid #d4d4d4;
+    padding-top: 20px;
+  }
+  .contGen p.detail{
+    min-height: 70px;
+  }
+
+  .headBlog{
+    .social-text{
+      color: #000;
+    }
+    ul{
+      li{
+        a{
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .contGen .sepTop5{
+    margin-top: 24px;
+  }
+  .contGen .sepTop3 {
+    margin-top: 12px;
+  }
+
+  .contGen p.borBoot{
+    padding-bottom: 16px;
+    border:0 ;
+  }
+
+  .contGen .sepTop4 {
+    margin-top: 20px;
+  }
+  .contGen.marBoot {
+    margin-bottom: 20px;
+  }
+
+  .contGen h3 {
+    font-size: 27px;
+  }
+
+  .contGen p {
+    font-size: 19px;
+  }
+
+  h2{
+    font-size: 45px;
+  }
+  h3{
+    font-size: 27px;
+    &.detail{
+      font-size: 32px;
+    }
+  }
+  p{
+    font-size: 19px;
+    &.blog{
+      font-size: 27px;
+    }
+    &.detail{
+      font-size: 22px;
+    }
+    &.borBoot{
+      padding-bottom: 48px;
+    }
+  }
+
+  ul#navPrin {
+     li{
+       a{
+         font-size: 16px;
+       }
+     }
+  }
+
+
+}
+@media only screen and (max-width: 480px){
+  .contGen .btnRaedMore{
+    display: block;
+  }
+  .contGen .pagination{
+    &>li{
+      &.active{
+        &>a{
+          font-size: 14px;
+          padding: 11px 11px;
+        }
+      }
+      &>a{
+        font-size: 14px;
+        padding: 11px 11px;
+      }
+    }
+  }
+  .contGen .txtDetail{
+    padding: 12px;
+    text-align: center;
+  }
+  .wrapper .slide-text, .wrapper .slide-control {
+    font-size: 20px;
+  }
+}
+

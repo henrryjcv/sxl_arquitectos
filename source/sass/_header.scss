@@ -1,0 +1,124 @@
+@media (max-width: 768px){
+  .navbar {
+    .line {
+      display: none;
+    }
+    .social {
+      display: none;
+    }
+    .btn-navbar{
+      background: url('../images/btnmenu.png') no-repeat center;
+      float: right;
+      display: block!important;
+      margin: 36px 0 0 0;
+      border: none;
+      text-indent: -9999999px;
+      height: 30px;
+      width: 35px;
+    }
+
+
+  }
+
+  .wrapper-menu{
+    position: absolute;
+    top: -2%;
+    z-index: 99999;
+    right: 0;
+    background: #fff;
+    ul {
+      li{
+        display: block;
+        margin: 0 0 30px 6%;
+      }
+      span{
+        padding: 0 10px 0 0;
+      }
+    }
+  }
+  .social{
+    /*margin: 0 0 0 20%;*/
+    display: none;
+  }
+  .close-menu{
+    background: url("../images/close-menu.png") no-repeat center;
+    height: 50px;
+    width: 50px;
+    padding: 0 0 30% 30%;
+    cursor: pointer;
+  }
+
+}
+
+.navbar {
+  background: #ffffff;
+  border-color: #ffffff;
+  margin-top: 30px;
+  max-width: 1200px;
+  .btn-navbar{
+    display: none;
+  }
+  .logo {
+    margin: 0 auto;
+    display: block;
+    width: 107px;
+    height: 109px;
+    float: left;
+
+  }
+
+  .line {
+    float: left;
+    border: 0;
+    width: 2px;
+    height: 71px;
+    background: #e7e7e7;
+    margin: 10px 30px 0;
+  }
+  ul {
+    float: left;
+    list-style: none;
+    display: block;
+    padding: 30px 0 0 0;
+    width: 50%;
+    min-width: 330px;
+    max-width: 450px;
+  }
+  li {
+    float: left;
+    display: block;
+    padding-bottom: 6px;
+  }
+  span {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  .social {
+    float: right;
+    text-align: center;
+    padding-top: 28px;
+    a.ico{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+    }
+    .fb{
+      background: url('../images/facebook.png') no-repeat center;
+      &:hover{
+        background: url('../images/facebook-hover.png') no-repeat center;
+      }
+    }
+    .pint{
+      background: url('../images/pinterest.png') no-repeat center;
+      &:hover{
+        background: url('../images/pinterest-hover.png') no-repeat center;
+      }
+    }
+    .inst{
+      background: url('../images/instagram.png') no-repeat center;
+      &:hover{
+        background: url('../images/instagram-hover.png') no-repeat center;
+      }
+    }
+  }
+}
